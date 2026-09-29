@@ -21,8 +21,6 @@ The caller supplies, however it chooses to pass them:
   exact. A file holding only SKU, name and price is a published price list, not the
   catalogue — it cannot support a margin calculation, so do not treat it as one
 - **The rules** — target price position, rounding, the cap on a single change
-- **Yesterday's snapshots**, when they exist. On the first run there are none, which is
-  normal rather than an error
 
 The snapshots are your only view of the competitors. Everything in them was captured today
 by an agent that deliberately made no decisions, so the matching, the eligibility calls and
@@ -77,15 +75,13 @@ the number, and keep it under 300 words.
 judgment. The rules are in the skill. Fix the data it flags, never
 the rule, and stop after three rounds.
 
-## Daily runs
+## Each run
 
-- Compare against yesterday and lead with what changed. On a quiet day the right output is
-  a short one — do not manufacture a recommendation to fill it.
+- Work only from today's snapshots. A quiet day is a valid result — do not manufacture a
+  recommendation to fill it.
 - A competitor's move is not automatically a reason to act. Clearance pricing, a
   discontinued model or a thin-stock listing are all reasons to hold, and saying so is a
   result.
-- Judge a price move against yesterday, not against the first day you ever saw. A product
-  drifting down a little each day matters; say so when you see it.
 
 ## Stop and flag rather than guess
 
